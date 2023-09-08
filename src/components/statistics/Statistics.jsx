@@ -4,7 +4,7 @@ import { StyledSection, StyledList } from './statistics.styled';
 const Statistics = ({ title, stats }) => {
   return (
     <StyledSection>
-      {title.length > 0 && <h2>{title}</h2>}
+      {title && <h2>{title}</h2>}
       <StyledList>
         {stats.map(value => (
           <li key={value.id} style={{ backgroundColor: "#teal" }}>
